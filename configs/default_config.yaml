@@ -17,12 +17,10 @@ batch_size: 64
 gradient_accumulation: 1
 learning_rate: 0.001              
 weight_decay: 0.002
-replicate: 0
 device: 0
-verbosity: 3
-shuffle: False
+shuffle: True
 num_workers: 0
-domain: True
+
 
 # task: KIBA
 # drug_seq_featurizer: unimolFeaturizer
@@ -43,9 +41,7 @@ domain: True
 # gradient_accumulation: 1
 # learning_rate: 0.001              
 # weight_decay: 0.005
-# replicate: 0
 # device: 0
-# verbosity: 3
-# shuffle: False
+# shuffle: True
 # num_workers: 0
-# domain: True
+
