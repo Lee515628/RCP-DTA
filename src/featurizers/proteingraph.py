@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 CONFIG = {
   "Davis": {
     "csv_path": "/home/RCP-DTA/dataset/Davis/process.csv",
-    "pdb_dir": "/home/zhaol409100220027/zhaol409100220027/lee409100240016/dataprocessing/DavisPDB",
+    "pdb_dir": "/home/dataprocessing/DavisPDB",
     "p2rank_dir": "/home/RCP-DTA/dataset/Davis/p2rank_results",
     "pssm_dir": "/home/RCP-DTA/dataset/Davis/davis_pssm_results",
     "fasta_path": "/home/RCP-DTA/dataset/Davis/davis_unique_proteins.fasta",
@@ -25,7 +25,7 @@ CONFIG = {
   },
   "KIBA": {
     "csv_path": "/home/RCP-DTA/dataset/KIBA/process.csv",
-    "pdb_dir": "/home/zhaol409100220027/zhaol409100220027/lee409100240016/dataprocessing/KIBAPDB",
+    "pdb_dir": "/home/dataprocessing/KIBAPDB",
     "p2rank_dir": "/home/RCP-DTA/dataset/KIBA/p2rank_results",
     "pssm_dir": "/home/RCP-DTA/dataset/KIBA/kiba_pssm_results",
     "fasta_path": "/home/RCP-DTA/dataset/KIBA/kiba_unique_proteins.fasta",
