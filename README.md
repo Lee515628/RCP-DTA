@@ -43,9 +43,13 @@ The architecture consists of three main modules: Representation Learning, Featur
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/Lee515628/RCP-DTA.git](https://github.com/Lee515628/RCP-DTA.git)
+git clone https://github.com/Lee515628/RCP-DTA.git
 cd RCP-DTA
 
-# 2. Install required Python packages
+# 2. Create a new conda environment
+conda create -n RCPDTA python=3.7
+conda activate RCPDTA
+
+# 3. Install required Python packages
 pip install -r requirements.txt
 ```
