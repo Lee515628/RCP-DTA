@@ -49,20 +49,3 @@ cd RCP-DTA
 # 2. Install required Python packages
 pip install -r requirements.txt
 ```
-
-
-
-RCP-DTA/
-├── dataset/            # Dataset directory
-│   ├── Davis/          
-│   └── KIBA/          
-├── src/             
-│   ├── featurizers/    # Molecular and protein featurization scripts
-│   ├── model.py        # Core RCP-DTA model architecture
-│   ├── moleculegnn.py  # Drug-specific Graph Neural Network
-│   ├── proteingnn.py   # Protein-specific Graph Neural Network
-│   └── utils_dta.py    # 
-├── configs/            # Configuration files
-├── training.sh         # Shell script to trigger the training pipeline
-├── runcp.sh            # Shell script for Conformal Prediction inference
-└── requirements.txt    # List of dependencies
