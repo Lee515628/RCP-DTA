@@ -53,3 +53,5 @@ conda activate RCPDTA
 # 3. Install required Python packages
 pip install -r requirements.txt
 ```
+
+###🚀 Getting Started
