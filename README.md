@@ -11,7 +11,7 @@ This repository contains the official implementation of the paper: **"Representa
 
 Predicting Drug-Target Affinity  is a cornerstone of computer-aided drug discovery. However, standard deep learning models often provide point estimates without a measure of confidence. 
 
-**RCP-DTA** addresses this by integrating multi-modal representation learning with **Conformal Prediction **. Our framework provides:
+**RCP-DTA** addresses this by integrating multi-modal representation learning with **Conformal Prediction**. Our framework provides:
 
 * **Point Predictions**: Highly accurate affinity scores.
 * **Uncertainty Intervals**: Mathematically guaranteed prediction intervals with user-defined confidence levels (e.g., 95%).
