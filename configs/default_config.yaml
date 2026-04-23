@@ -1,0 +1,51 @@
+task: Davis
+drug_seq_featurizer: unimolFeaturizer
+target_seq_featurizer: ESMFeaturizer
+model_architecture: DTAPredictor
+
+
+# Model Parameters
+drug_dim: 256
+target_dim: 256
+h_dim: 128
+n_heads: 4
+
+
+
+epochs: 300
+batch_size: 64
+gradient_accumulation: 1
+learning_rate: 0.001              
+weight_decay: 0.002
+replicate: 0
+device: 0
+verbosity: 3
+shuffle: False
+num_workers: 0
+domain: True
+
+# task: KIBA
+# drug_seq_featurizer: unimolFeaturizer
+# target_seq_featurizer: ESMFeaturizer
+# model_architecture: DTAPredictor
+
+
+# # Model Parameters
+# drug_dim: 256
+# target_dim: 256
+# h_dim: 128
+# n_heads: 4
+
+
+
+# epochs: 300
+# batch_size: 128
+# gradient_accumulation: 1
+# learning_rate: 0.001              
+# weight_decay: 0.005
+# replicate: 0
+# device: 0
+# verbosity: 3
+# shuffle: False
+# num_workers: 0
+# domain: True
