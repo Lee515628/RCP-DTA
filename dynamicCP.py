@@ -68,7 +68,6 @@ def calculate_interval_score(y_true, y_preds, q_low, q_high, alpha):
     upper = y_preds + q_high
     width = upper - lower
     
-    # 惩罚项
     under = (2.0 / alpha) * (lower - y_true) * (y_true < lower)
     over = (2.0 / alpha) * (y_true - upper) * (y_true > upper)
     
@@ -187,7 +186,7 @@ def main():
                 
                 emp_cov = ((test_labels_np >= (test_preds_np - q_values)) & 
                            (test_labels_np <= (test_preds_np + q_values))).mean()
-                # RCP 对称区间 q_low = -q, q_high = q
+
                 score = calculate_interval_score(test_labels_np, test_preds_np, -q_values, q_values, alpha)
                 
                 all_summary_results.append({
