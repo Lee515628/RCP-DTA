@@ -18,7 +18,7 @@ Predicting Drug-Target Affinity  is a cornerstone of computer-aided drug discove
 
 ### Key Methodology
 
-1. **Feature Extraction**: Dual-stream GNNs (`MolGNNEncoder` and `ProGNNEncoder`) capture complex structural information from SMILES and protein sequences.
+1. **Hybrid Feature Extraction**: Combines **Dual-stream GNNs** (`MolGNNEncoder` and `ProGNNEncoder`) for structural information with **Pre-trained Models** (**Uni-mol** for SMILES and **ESM-2** for protein sequences) to capture deep semantic representations.
 2. **Representation-Aware Fusion**: Utilizes `UniCrossAttention` and `SSFusion` (Gate Fusion) to align and merge drug-target features effectively.
 3. **Adaptive Prediction**: Employs **Local Quantile Mapping** within the Conformal Prediction framework to generate sample-specific uncertainty estimates.
 
