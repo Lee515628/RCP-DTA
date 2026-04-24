@@ -82,7 +82,7 @@ def main():
     parser.add_argument("--cold", type=str_to_list, default=['Drug','target_key'])
     parser.add_argument("-b", "--batch-size", type=int, default=32)
     parser.add_argument("--device", type=int, default=0)
-    parser.add_argument("--train-seed", type=int, default=42)
+    parser.add_argument("--train-seed", type=int, default=0)
     args = parser.parse_args()
 
     base_pth = "/home/RCP-DTA/bestmodel/"
@@ -134,7 +134,7 @@ def main():
     cal_size = len(cal_loader.dataset)
     test_size = len(pool_dataset) - cal_size
 
-    resample_seeds = [42]
+    resample_seeds = [0]
     all_summary_results = []
 
     for r_seed in resample_seeds:
