@@ -74,7 +74,7 @@ The framework utilizes specialized featurizers to convert raw data into graph re
 * **Molecular Graphs**: Processed via `src/featurizers/molgraph.py`.
 
 ### 2. Training the Model
-You can train the model on specific datasets using the `main.py` script. The `--r` flag specifies the run index or configuration.
+You can train the model on specific datasets using the `main.py` script. The `--r` flag is used to set the **random seed** for reproducibility.
 
 **For Davis Dataset:**
 ```bash
