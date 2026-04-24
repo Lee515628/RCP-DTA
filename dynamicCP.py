@@ -134,7 +134,7 @@ def main():
     cal_size = len(cal_loader.dataset)
     test_size = len(pool_dataset) - cal_size
 
-    resample_seeds = [0, 1, 2, 3, 4]
+    resample_seeds = [42]
     all_summary_results = []
 
     for r_seed in resample_seeds:
