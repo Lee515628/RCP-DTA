@@ -8,8 +8,8 @@ python dynamicCP.py --task Davis
 # # KIBA Random
 python dynamicCP.py --task KIBA --use-cold-spilt False
 # KIBA Cold Target
-python dynamicCP.py --task KIBA --use-cold-spilt True --cold target_key --train-seed 0
+python dynamicCP.py --task KIBA --use-cold-spilt True --cold target_key
 # KIBA Cold Drug
-python dynamicCP.py --task KIBA --use-cold-spilt True --cold Drug --train-seed 0
+python dynamicCP.py --task KIBA --use-cold-spilt True --cold Drug
 # KIBA Cold Both
-python dynamicCP.py --task KIBA --use-cold-spilt True --cold Drug,target_key --train-seed 0
+python dynamicCP.py --task KIBA --use-cold-spilt True --cold Drug,target_key
