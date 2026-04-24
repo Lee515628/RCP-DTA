@@ -82,3 +82,23 @@ bash training.sh
 ```bash
 bash runcp.sh
 ```
+
+---
+
+## 📂 Directory Structure
+```text
+RCP-DTA/
+├── dataset/
+│   ├── Davis/              # Davis dataset files
+│   └── KIBA/               # KIBA dataset (process.csv managed by Git LFS)
+├── src/
+│   ├── featurizers/
+│   │   ├── proteingraph.py  # Script for generating protein graph representations
+│   │   └── molgraph.py      # Script for generating molecular graph representations
+│   ├── model.py            # Core model architecture (RCP-DTA)
+│   ├── main.py             # Entry point for training and evaluation
+│   └── ...
+├── training.sh             
+├── runcp.sh                
+└── requirements.txt     
+```
