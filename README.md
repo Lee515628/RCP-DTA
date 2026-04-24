@@ -54,4 +54,31 @@ conda activate RCPDTA
 pip install -r requirements.txt
 ```
 
-### 🚀 Getting Started
+## 🚀 Usage Guide
+
+### 1. Feature Extraction
+The framework utilizes specialized featurizers to convert raw data into graph representations:
+* **Protein Graphs**: Processed via `src/featurizers/proteingraph.py`.
+* **Molecular Graphs**: Processed via `src/featurizers/molgraph.py`.
+
+### 2. Training the Model
+You can train the model on specific datasets using the `main.py` script. The `--r` flag specifies the run index or configuration.
+
+**For Davis Dataset:**
+```bash
+python main.py --task Davis --r 0
+```
+**For KIBA Dataset:**
+```bash
+python main.py --task KIBA --r 0
+```
+
+**Running Multi-Seed Experiments**
+```bash
+bash training.sh
+```
+
+**Running RCP**
+```bash
+bash runcp.sh
+```
