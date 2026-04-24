@@ -36,7 +36,7 @@ The architecture consists of three main modules: Representation Learning, Featur
 
 ### Prerequisites
 
-* **OS**: Linux (Recommended for full AmberTools support) or Windows 10/11
+* **OS**: Linux  or Windows 10/11
 * **Python**: 3.7.16 (Ensures compatibility with PyTorch 1.13.1 and specific GNN libraries)
 * **GPU**: NVIDIA GPU with CUDA 11.7 support is highly recommended for GNN training.
 
@@ -101,16 +101,26 @@ bash runcp.sh
 ```text
 RCP-DTA/
 ├── dataset/
-│   ├── Davis/              # Davis dataset files
-│   └── KIBA/               # KIBA dataset (process.csv managed by Git LFS)
+│   ├── Davis/          
+│   └── KIBA/            
 ├── src/
 │   ├── featurizers/
-│   │   ├── proteingraph.py  # Script for generating protein graph representations
-│   │   └── molgraph.py      # Script for generating molecular graph representations
-│   ├── model.py            # Core model architecture (RCP-DTA)
-│   ├── main.py             # Entry point for training and evaluation
-│   └── ...
+│   │   ├── proteingraph.py
+│   │   ├── molgraph.py
+│   │   ├── molecule.py
+│   │   ├── protein.py  
+│   │   └── molgraph.py
+│   ├── model.py          
+│   ├── main.py
+│   ├── data.py
+│   ├── moleculegnn.py     
+│   └── proteingnn.py
 ├── training.sh             
+├── Radam.py
+├── dynamicCP.py
+├── Lookahead.py
+├── train_test.py
+├── utils_dta.py
 ├── runcp.sh                
 └── requirements.txt     
 ```
