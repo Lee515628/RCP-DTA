@@ -42,18 +42,13 @@ The architecture consists of three main modules: Representation Learning, Featur
 
 ### Core Environment Dependencies
 The project relies on the following key frameworks:
-* **Deep Learning**: 
   * `torch==1.13.1+cu117`
   * `torch-geometric==2.3.1` 
   * `pytorch-lightning==1.9.5`
-* **Bio/Cheminformatics**:
   * `rdkit==2023.3.2`
   * `biopython==1.81`
-  * `AmberTools==17.0` 
-* **GNN & Graph Processing**:
   * `dgl==1.1.3`
   * `networkx==2.6.3`
-* **Large Models**:
   * `transformers==4.21.3`
   * `fair-esm==2.0.0`
 ### Setup Instructions
