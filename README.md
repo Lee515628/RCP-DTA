@@ -24,6 +24,14 @@ Predicting Drug-Target Affinity  is a cornerstone of computer-aided drug discove
 
 ---
 
+## Data Availability
+
+The protein prediction datasets (including PDB structures, PSSM features, and P2Rank results for both Davis and KIBA benchmarks) generated and used in this study are openly available on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20301815.svg)](https://doi.org/10.5281/zenodo.20301815)
+
+Direct link: [https://doi.org/10.5281/zenodo.20301815](https://doi.org/10.5281/zenodo.20301815)
+
 ## 🏗 Framework Architecture
 
 The architecture consists of three main modules: Representation Learning, Feature Fusion, and Adaptive Uncertainty Prediction.
