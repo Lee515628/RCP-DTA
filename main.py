@@ -141,18 +141,6 @@ drug_seq_featurizer = get_featurizer(config.drug_seq_featurizer, save_dir=task_d
 
 target_seq_featurizer = get_featurizer(config.target_seq_featurizer, save_dir=task_dir)
 
-logg.info("Initializing Structure Featurizers...")
-drug_struc_featurizer = MolGraphFeaturizer(save_dir=task_dir) 
-if config.prot_struc_type == "pssm":
-    logg.info("Using PSSM-enhanced Protein Featurizer (69 dim)")
-    target_struc_featurizer = ProteinPSSMGNNFeaturizer(save_dir=task_dir)
-
-    prot_node_dim = 69 
-else:
-    logg.info("Using Default Protein Featurizer (49 dim)")
-    target_struc_featurizer = ProteinGNNFeaturizer(save_dir=task_dir)
-    prot_node_dim = 61
-
 
 datamodule = DTADataModule(
     data_dir=task_dir,
